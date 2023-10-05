@@ -1,0 +1,17 @@
+{
+  "name": "base-apparel-landing-page",
+  "version": "1.0.0",
+  "homepage": "https://github.com/Smallz97/base-apparel-landing-page",
+  "description": "base apparel landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/Smallz97/base-apparel-landing-page.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

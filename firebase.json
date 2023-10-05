@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "base apparel",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

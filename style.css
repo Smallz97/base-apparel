@@ -1,0 +1,344 @@
+/* resetting margins and paddings to ensure consistency accross browsers */
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+/* defining root variables */
+:root {
+  /* defining font weights as variables */
+  --small-font: 300;
+  --medium-font: 400;
+  --large-font: 600;
+
+  /* defining colors as variables */
+  --black: rgba(66, 58, 58, 1);
+  --white: rgba(255, 255, 255, 1);
+  --dark-brown: rgba(206, 152, 152, 1);
+  --error-icon: rgba(249, 100, 100, 1);
+  --light-brown: rgba(238, 139, 139, 1);
+  --left-gradient: rgba(248, 191, 191, 1);
+  --right-gradient: rgba(238, 139, 139, 1);
+  --button-gradient: linear-gradient(
+    135deg,
+    rgba(248, 191, 191, 1),
+    rgba(238, 139, 139, 1)
+  );
+}
+
+/* removing the default border stylings on input fields */
+input {
+  border: none;
+}
+
+/* removing the default border stylings on buttons */
+button {
+  border: none;
+}
+
+/* styling the html body */
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* styling the hero section to the full width and height of the browser's window on desktops for consistency across different browsers */
+#hero-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+/* styling the hero-section's textbox */
+#textbox {
+  display: flex;
+  flex-basis: 60%;
+  position: relative;
+}
+
+/* styling the hero-section's textbox's background image */
+#textbox img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* setting the hero-section's text to appear on top the background image */
+#text-wrapper {
+  z-index: 1;
+  width: 28rem;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+/* styling the brand's logo to display within the text-wrapper for desktop displays */
+#brand {
+  width: 10rem;
+  height: 2.1rem;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+/* styling the brand's logo image */
+#brand img {
+  width: auto;
+  height: auto;
+}
+
+/* styling the copy text on the hero page */
+#copy-text {
+  margin-bottom: 4rem;
+}
+
+/* styling the big text of the copy */
+.big-text {
+  font-size: 4rem;
+  line-height: 4rem;
+  margin-bottom: 2rem;
+  color: var(--dark-brown);
+  text-transform: uppercase;
+  letter-spacing: 1.08256rem;
+  font-weight: var(--small-font);
+}
+
+/* styling the big black text of the copy  */
+.span {
+  color: var(--black);
+  line-height: 4.5rem;
+  font-weight: var(--large-font);
+}
+
+/* styling the small text of the copy */
+.small-text {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: var(--dark-brown);
+  font-weight: var(--medium-font);
+}
+
+/* styling the form field */
+#form {
+  width: 100%;
+  position: relative;
+}
+
+/* styling the email input form */
+.email-input {
+  width: 100%;
+  opacity: 0.5;
+  padding: 12px;
+  border-radius: 2rem;
+  border: 1.5px solid var(--dark-brown);
+}
+
+/* styling the form's submission button */
+.form-btn {
+  right: 0;
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  color: var(--white);
+  border-radius: 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(assets/icons/icon-arrow.svg), var(--button-gradient);
+}
+
+/* styling the hero's page background image-box */
+#imagebox {
+  display: flex;
+  flex-basis: 40%;
+  position: relative;
+}
+
+/* stlying the hero's page background image */
+#imagebox img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* Styling the mobile brand logo to not display on desktop screens */
+#mobile-brand {
+  display: none;
+}
+
+/* styling for big tablet displays */
+@media screen and (max-width: 890px) {
+  #hero-section {
+    flex-direction: column-reverse;
+  }
+
+  /* restlying the text-wrapper to optimize viewing on mobile displays */
+  #text-wrapper {
+    width: 80%;
+    margin: none;
+    display: flex;
+    margin-top: 5rem;
+  }
+
+  /* styling the brand's logo to not display within the text-wrapper of mobile displays */
+  #brand {
+   display: none;
+  }
+
+  /* styling the brand's logo to display at the top of the screen of mobile displays */
+  #mobile-brand {
+    display: flex;
+    flex-basis: 10%;
+    padding: 0 4rem;
+    align-items: center;
+  }
+  
+  /* resizing the imagebox to optimize viewing on mobile screens */
+  #imagebox {
+    flex-basis: 35%;
+  }
+
+  /* resizing the textbox to optimize viewing on mobile screens */
+  #textbox {
+    flex-basis: 55%;
+  }
+
+  /* setting the alignment of texts in the copy to the center to optimize the view on mobile displays */
+  #copy-text {
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
+
+  /* Resizing the big text of the copy to optimize viewing on mobile displays */
+  .big-text {
+    font-size: 2.5rem;
+  }
+
+  /* resizing the small text of the copy to optimize viewing on mobile displays */
+  .small-text {
+    line-height: 2rem;
+    font-size: 1.4rem;
+  }
+
+  /* restyling the email input field to optimize viewing on mobile displays */
+  .email-input {
+    padding: 20px;
+    font-size: var(--large-font);
+  }
+}
+
+/* restyling for smaller tablet displays */
+@media screen and (max-width: 770px) {
+  /* resetting the top margin of the text-wrapper to optimize the view on smaller tablet displays */
+  #text-wrapper {
+    margin-top: 2.5rem;
+  }
+
+  /* resizing the imagebox to optimize the view on smaller tablet displays */
+  #imagebox {
+    flex-basis: 40%;
+  }
+
+  /* resizing the textbox to optimize the view on smaller tablet displays */
+  #textbox {
+    flex-basis: 50%;
+  }
+
+  /* resetting the bottom margin of the copy to optimize the view on smaller tablet displays */
+  #copy-text {
+    margin-bottom: 2rem;
+  }
+
+  /* Resizing the big text of the copy to optimize viewing on smaller tablet displays */
+  .big-text {
+    font-size: 2rem;
+  }
+
+  /* restyling the small text of the copy to optimize viewing on smaller tablet displays */
+  .small-text {
+    font-size: 1.3rem;
+  }
+}
+
+/* restyling for mobile phone displays */
+@media screen and (max-width: 450px) {
+  /* resetting the top margin of the text-wrapper to optimize the view on mobile phones */
+  #text-wrapper {
+    margin-top: 2.5rem;
+  }
+
+  /* resizing the mobile-brand container to optimize the view on mobile phones */
+  #mobile-brand {
+    padding: 0 2rem;
+  }
+
+  /* Restyling the big colored text of the copy to optimize viewing on mobile phones */
+  .big-text {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.67656rem;
+  }
+
+  /* resizing the black text of the copy to optimize viewing on mobile phones */
+  .span {
+    line-height: 2.2rem;
+  }
+
+  /* restyling the small text of the copy to optimize viewing on mobile phones */
+  .small-text {
+    font-size: 0.87rem;
+    line-height: 1.37rem;
+  }
+
+  /* resizing the form iput field to optimize viewing on mobile phones */
+  .email-input {
+    padding: 10px;
+  }
+}
+
+/* restyling for smaller mobile phones displays */
+@media screen and (max-width: 330px) {
+  /* resizing the mobile-band to optimize viewing on smaller mobile phones */
+  #mobile-brand {
+    flex-basis: 15%;
+    padding: 0 1.5rem;
+  }
+  
+  /* resizing the imagebox to optimize the view on smaller mobile phones */
+  #imagebox {
+    flex-basis: 30%;
+  }
+
+  /* resizing the textbox to optimize the view on smaller mobile phones */
+  #textbox {
+    flex-basis: 55%;
+  }
+
+  /* resizing the top margin of the text-wrapper to optimize the view on smaller mobile phones */
+  #text-wrapper {
+    margin-top: 1.5rem;
+  }
+
+  /* resizing the bottom margin of the copy to optimize the view on smaller mobile phones */
+  #copy-text {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Restyling the big colored text of the copy to optimize viewing on smaller mobile phones */
+  .big-text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 0.1rem;
+    letter-spacing: 0.67656rem;
+  }
+
+  /* resizing the black text of the copy to optimize viewing on smaller mobile phones */
+  .span {
+    line-height: 2rem;
+  }
+
+  /* resizing the form iput field to optimize viewing on smaller mobile phones */
+  .email-input {
+    padding: 8px;
+  }
+}
