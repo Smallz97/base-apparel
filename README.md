@@ -1,6 +1,6 @@
 # Frontend Mentor - Base Apparel coming soon page solution
 
-This is a solution to the [Base Apparel coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Base Apparel coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0).
 
 ## Table of contents
 
@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://base-apparel-landing-page.firebase.com)
+- Solution URL: [Base Apparel](https://your-solution-url.com)
+- Live Site URL: [Base Apparel](https://base-apparel-landing-page.firebase.com)
 
 ## My process
 
@@ -45,7 +45,7 @@ Users should be able to:
 
 ### What I learned
 
-Using the HTML Picture Element to display an image from a list of multiple images based on the device width:
+- Using the HTML Picture Element to display an image from a list of multiple images based on the device width:
 
 ```html
 <Picture>
@@ -62,5 +62,5 @@ Using the HTML Picture Element to display an image from a list of multiple image
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Smallz97)
-- Twitter - [@yourusername](https://www.twitter.com/taiwovicktor)
+- Frontend Mentor - [@Smallz97](https://www.frontendmentor.io/profile/Smallz97)
+- Twitter - [@taiwovicktor](https://www.twitter.com/taiwovicktor)
