@@ -78,7 +78,7 @@ body {
   width: 10rem;
   height: 2.1rem;
   margin-top: 4rem;
-  margin-bottom: 6rem;
+  margin-bottom: 8rem;
 }
 
 /* styling the brand's logo image */
@@ -89,7 +89,7 @@ body {
 
 /* styling the copy text on the hero page */
 #copy-text {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 /* styling the big text of the copy */
@@ -171,19 +171,6 @@ body {
     flex-direction: column-reverse;
   }
 
-  /* restlying the text-wrapper to optimize viewing on mobile displays */
-  #text-wrapper {
-    width: 80%;
-    margin: none;
-    display: flex;
-    margin-top: 5rem;
-  }
-
-  /* styling the brand's logo to not display within the text-wrapper of mobile displays */
-  #brand {
-   display: none;
-  }
-
   /* styling the brand's logo to display at the top of the screen of mobile displays */
   #mobile-brand {
     display: flex;
@@ -191,7 +178,7 @@ body {
     padding: 0 4rem;
     align-items: center;
   }
-  
+
   /* resizing the imagebox to optimize viewing on mobile screens */
   #imagebox {
     flex-basis: 35%;
@@ -200,6 +187,19 @@ body {
   /* resizing the textbox to optimize viewing on mobile screens */
   #textbox {
     flex-basis: 55%;
+  }
+
+  /* restlying the text-wrapper to optimize viewing on mobile displays */
+  #text-wrapper {
+    width: 80%;
+    margin: none;
+    display: flex;
+    margin-top: 5rem;
+  }
+  
+  /* styling the brand's logo to not display within the text-wrapper of mobile displays */
+  #brand {
+    display: none;
   }
 
   /* setting the alignment of texts in the copy to the center to optimize the view on mobile displays */
@@ -226,21 +226,11 @@ body {
   }
 }
 
-/* restyling for smaller tablet displays */
+/* restyling for display on smaller tablet */
 @media screen and (max-width: 770px) {
   /* resetting the top margin of the text-wrapper to optimize the view on smaller tablet displays */
   #text-wrapper {
     margin-top: 2.5rem;
-  }
-
-  /* resizing the imagebox to optimize the view on smaller tablet displays */
-  #imagebox {
-    flex-basis: 40%;
-  }
-
-  /* resizing the textbox to optimize the view on smaller tablet displays */
-  #textbox {
-    flex-basis: 50%;
   }
 
   /* resetting the bottom margin of the copy to optimize the view on smaller tablet displays */
@@ -250,33 +240,48 @@ body {
 
   /* Resizing the big text of the copy to optimize viewing on smaller tablet displays */
   .big-text {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5rem;
+  }
+
+  /* resizing the black text of the copy to optimize viewing on mobile phones */
+  .span {
+    line-height: 3.5rem;
   }
 
   /* restyling the small text of the copy to optimize viewing on smaller tablet displays */
   .small-text {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
   }
 }
 
-/* restyling for mobile phone displays */
+/* restyling for display on mobile phone */
 @media screen and (max-width: 450px) {
+  /* resizing the mobile-brand container to optimize the view on mobile phones */
+  #mobile-brand {
+    padding: 0 2rem;
+    flex-basis: 10%;
+  }
+
   /* resetting the top margin of the text-wrapper to optimize the view on mobile phones */
   #text-wrapper {
     margin-top: 2.5rem;
   }
 
-  /* resizing the mobile-brand container to optimize the view on mobile phones */
-  #mobile-brand {
-    padding: 0 2rem;
+  /* resizing the bottom margin of the copy to optimize the view on smaller mobile phones */
+  #copy-text {
+    margin-bottom: 2.3rem;
   }
 
   /* Restyling the big colored text of the copy to optimize viewing on mobile phones */
   .big-text {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
     line-height: 2.2rem;
-    margin-bottom: 0.2rem;
-    letter-spacing: 0.67656rem;
+    letter-spacing: 1.1rem;
   }
 
   /* resizing the black text of the copy to optimize viewing on mobile phones */
@@ -286,8 +291,8 @@ body {
 
   /* restyling the small text of the copy to optimize viewing on mobile phones */
   .small-text {
-    font-size: 0.87rem;
-    line-height: 1.37rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   /* resizing the form iput field to optimize viewing on mobile phones */
@@ -296,45 +301,40 @@ body {
   }
 }
 
-/* restyling for smaller mobile phones displays */
-@media screen and (max-width: 330px) {
+/* restyling for display on smaller mobile phones */
+@media screen and (max-width: 380px) {
   /* resizing the mobile-band to optimize viewing on smaller mobile phones */
   #mobile-brand {
-    flex-basis: 15%;
     padding: 0 1.5rem;
   }
   
-  /* resizing the imagebox to optimize the view on smaller mobile phones */
-  #imagebox {
-    flex-basis: 30%;
-  }
-
-  /* resizing the textbox to optimize the view on smaller mobile phones */
-  #textbox {
-    flex-basis: 55%;
-  }
-
   /* resizing the top margin of the text-wrapper to optimize the view on smaller mobile phones */
   #text-wrapper {
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
   }
 
   /* resizing the bottom margin of the copy to optimize the view on smaller mobile phones */
   #copy-text {
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
   }
 
   /* Restyling the big colored text of the copy to optimize viewing on smaller mobile phones */
   .big-text {
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 2rem;
-    margin-bottom: 0.1rem;
-    letter-spacing: 0.67656rem;
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.9rem;
   }
 
   /* resizing the black text of the copy to optimize viewing on smaller mobile phones */
   .span {
     line-height: 2rem;
+  }
+
+  /* restyling the small text of the copy to optimize viewing on smaller mobile phones */
+  .small-text {
+    font-size: 0.87rem;
+    line-height: 1.37rem;
   }
 
   /* resizing the form iput field to optimize viewing on smaller mobile phones */
