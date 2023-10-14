@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Base Apparel](https://www.frontendmentor.io/solutions/base-apparel-u-RFL0LbKq)
+- Solution URL: [Frontend Mentor/Base-Apparel](https://www.frontendmentor.io/solutions/base-apparel-u-RFL0LbKq)
 - Live Site URL: [Base Apparel](https://base-apparel-landing-page.firebase.com)
 
 ## My process
