@@ -53,7 +53,7 @@ body {
 /* styling the hero-section's textbox */
 #textbox {
   display: flex;
-  flex-basis: 57%;
+  flex-basis: 58%;
   position: relative;
 }
 
@@ -78,7 +78,7 @@ body {
   width: 10rem;
   height: 2.1rem;
   margin-top: 4rem;
-  margin-bottom: 8rem;
+  margin-bottom: 7rem;
 }
 
 /* styling the brand's logo image */
@@ -149,7 +149,7 @@ body {
 /* styling the hero's page background image-box */
 #imagebox {
   display: flex;
-  flex-basis: 43%;
+  flex-basis: 42%;
   position: relative;
 }
 
