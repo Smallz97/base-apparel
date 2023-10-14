@@ -53,7 +53,7 @@ body {
 /* styling the hero-section's textbox */
 #textbox {
   display: flex;
-  flex-basis: 60%;
+  flex-basis: 57%;
   position: relative;
 }
 
@@ -128,7 +128,7 @@ body {
 .email-input {
   width: 100%;
   opacity: 0.5;
-  padding: 17px;
+  padding: 20px;
   border-radius: 2rem;
   border: 1.5px solid var(--dark-brown);
 }
@@ -149,7 +149,7 @@ body {
 /* styling the hero's page background image-box */
 #imagebox {
   display: flex;
-  flex-basis: 40%;
+  flex-basis: 43%;
   position: relative;
 }
 
