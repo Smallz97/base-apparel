@@ -128,7 +128,7 @@ body {
 .email-input {
   width: 100%;
   opacity: 0.5;
-  padding: 12px;
+  padding: 17px;
   border-radius: 2rem;
   border: 1.5px solid var(--dark-brown);
 }
@@ -281,7 +281,7 @@ body {
     font-size: 2.2rem;
     margin-bottom: 1rem;
     line-height: 2.2rem;
-    letter-spacing: 1.1rem;
+    letter-spacing: 0.95rem;
   }
 
   /* resizing the black text of the copy to optimize viewing on mobile phones */
@@ -292,17 +292,17 @@ body {
   /* restyling the small text of the copy to optimize viewing on mobile phones */
   .small-text {
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.45rem;
   }
 
   /* resizing the form iput field to optimize viewing on mobile phones */
   .email-input {
-    padding: 10px;
+    padding: 15px;
   }
 }
 
 /* restyling for display on smaller mobile phones */
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 395px) {
   /* resizing the mobile-band to optimize viewing on smaller mobile phones */
   #mobile-brand {
     padding: 0 1.5rem;
@@ -339,6 +339,6 @@ body {
 
   /* resizing the form iput field to optimize viewing on smaller mobile phones */
   .email-input {
-    padding: 8px;
+    padding: 14px;
   }
 }
